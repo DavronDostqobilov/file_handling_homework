@@ -9,7 +9,7 @@ def main(data):
     list1=data.split()
     k=len(list1[0])
     for i in list1:
-        if k<len(i):
+        if k>len(i):
             k=len(i)
     return k
 f=open('txt_file/data06.txt')
