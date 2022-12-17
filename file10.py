@@ -6,13 +6,13 @@ def main(data):
     Returns:
         int: return answer
     """
-    list1=data.split()
+    list1=data.split('\n')
     k=len(list1[0])
     for i in list1:
         if k<len(i):
             k=len(i)
     return k
-f=open('txt_file/data06.txt')
+f=open('txt_file/data10.txt')
 a=f.read()
 print(main(a))
 # Read data from file
