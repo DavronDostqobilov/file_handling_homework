@@ -7,11 +7,11 @@ def main(data):
         list: return answer
     """
     list1=data.split()
-    k=len(list1[0])
+    list2=[]
+    k=len(list1[0]) 
     for i in list1:
-        if k>len(i):
-            k=len(i)
-    return k
+        list2.append(len(i))       
+    return list2
 f=open('txt_file/data06.txt')
 a=f.read()
 print(main(a))
